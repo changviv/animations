@@ -9,7 +9,7 @@ const MarqueeButton = (): JSX.Element => {
     to { transform: translateX(-120%); }
   `;
 
-  const animation = onHover ? `${marquee} infinite 4s linear` : undefined;
+  const animation = onHover ? `${marquee} infinite 2s linear` : undefined;
 
   return (
     <Button
@@ -28,7 +28,7 @@ const MarqueeButton = (): JSX.Element => {
         }}
         animation={animation}
       >
-        Stack Sorted
+        {onHover ? "Add to cart" : "Buy Now"}
       </Text>
       <Text
         position={"absolute"}
@@ -37,7 +37,7 @@ const MarqueeButton = (): JSX.Element => {
         textAlign={"center"}
         animation={animation}
       >
-        Stack Sorted
+        {onHover ? "Add to cart" : "Buy Now"}
       </Text>
     </Button>
   );
