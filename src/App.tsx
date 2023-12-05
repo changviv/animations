@@ -1,5 +1,6 @@
 import { Box, ChakraProvider, Grid, VStack, theme } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
+import MarqueeBanner from "./MarqueBanner";
 import MarqueeBannerWithImg from "./MarqueBannerWithImg";
 import MarqueeButton from "./MarqueeButton";
 
@@ -9,7 +10,7 @@ export const App = () => (
       <Grid minH="100vh" p={3}>
         <ColorModeSwitcher justifySelf="flex-end" />
         <VStack spacing={8}>
-          {/* <MarqueeBanner /> */}
+          <MarqueeBanner />
           <MarqueeBannerWithImg />
           <MarqueeButton />
         </VStack>

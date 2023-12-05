@@ -21,12 +21,12 @@ const MarqueeBannerWithImg = (): JSX.Element => {
 
   const marquee = keyframes`
       from { transform: translateX(0); }
-      to { transform: translateX(calc(-100% - ${gap})); }
+      to { transform: translateX(calc(-100% - 2rem)); }
     `;
 
   const animation = prefersReducedMotion
     ? undefined
-    : `${marquee} infinite 10s linear`;
+    : `${marquee} infinite 10s linear 1s`;
 
   return (
     <Box
