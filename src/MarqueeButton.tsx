@@ -28,12 +28,15 @@ const MarqueeButton = (): JSX.Element => {
         color: "black",
       }}
     >
-      <Text animation={animation}>{onHover ? "Add to cart" : "Buy Now"}</Text>
       <Text
-        position={"absolute"}
-        left="120%"
-        w="100%"
-        textAlign={"center"}
+        _after={{
+          position: "absolute",
+          left: "120%",
+          w: "100%",
+          textAlign: "center",
+          "aria-hidden": "true",
+          content: `"Add to cart"`,
+        }}
         animation={animation}
       >
         {onHover ? "Add to cart" : "Buy Now"}
