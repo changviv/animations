@@ -27,6 +27,7 @@ const MarqueeBanner = (): JSX.Element => {
       transition={"all .4s ease-out"}
       position={"relative"}
       border={"1px solid black"}
+      userSelect={"none"}
     >
       <Text
         _after={{
