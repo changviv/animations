@@ -26,7 +26,7 @@ const MarqueeBannerWithImg = (): JSX.Element => {
 
   const animation = prefersReducedMotion
     ? undefined
-    : `${marquee} infinite 10s linear 1s`;
+    : `${marquee} infinite 12s linear`;
 
   return (
     <Box
@@ -72,6 +72,20 @@ const MarqueeBannerWithImg = (): JSX.Element => {
             <Text margin={2}> Matcha icecream </Text>
           </Center>
         </ListItem>
+
+        <ListItem textDecoration={"none"}>
+          <Center justifyContent={"flex-start"}>
+            <Image src={matchaIceTea} boxSize={8} />
+            <Text margin={2}> Matcha Ice tea</Text>
+          </Center>
+        </ListItem>
+
+        <ListItem>
+          <Center justifyContent={"flex-start"}>
+            <Image src={matchaCake} boxSize={8} />
+            <Text margin={2}> Matcha cake</Text>
+          </Center>
+        </ListItem>
       </UnorderedList>
 
       <UnorderedList
@@ -106,6 +120,20 @@ const MarqueeBannerWithImg = (): JSX.Element => {
           <Center justifyContent={"flex-start"}>
             <Image src={matchaIceCream} boxSize={8} />
             <Text margin={2}> Matcha icecream </Text>
+          </Center>
+        </ListItem>
+
+        <ListItem textDecoration={"none"}>
+          <Center justifyContent={"flex-start"}>
+            <Image src={matchaIceTea} boxSize={8} />
+            <Text margin={2}> Matcha Ice tea</Text>
+          </Center>
+        </ListItem>
+
+        <ListItem>
+          <Center justifyContent={"flex-start"}>
+            <Image src={matchaCake} boxSize={8} />
+            <Text margin={2}> Matcha cake</Text>
           </Center>
         </ListItem>
       </UnorderedList>
